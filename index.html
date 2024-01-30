@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="nav" id="nav">
+        <div class="logo"><h2>.</h2></div>
+        <div class="list">
+            <ul>
+                <li><a href="#intro" onclick="scrollToSection('intro')">Home</a></li>
+                <li><a href="#about" onclick="scrollToSection('about')">About</a></li>
+                <li><a href="#portfolio" onclick="scrollToSection('portfolio')">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="intro" id="intro">
+        <div class="start">
+            <h1>Hi! I am</h1><br>
+        </div>
+        <div class="name">
+            <h1>SUBIGA N</h1>
+        </div>
+        <br>
+        <div class="skill">
+            <h1>I AM DEVELOPER</h1>
+        </div><br>
+        <div class="icon">
+            <a href="https://www.linkedin.com/in/subiga-n-99754024b/" target="_blank">
+                <i class="fa fa-linkedin-square" style="font-size:48px;color:rgb(149,60,232); margin-right: 20px;"></i>
+            </a>
+            <a href="https://github.com/14Subiga" target="_blank">
+                <i class="fa fa-github" style="font-size:48px;color:rgb(149,60,232);margin-right: 20px;"></i>
+            </a>
+            <a>
+                <i class="fa fa-instagram" style="font-size:48px;color:rgb(149,60,232); margin-right: 20px"></i>
+            </a>
+        </div>
+    </div>
+    <div class="about" id="about">
+        <div class="me">
+            <h1>About Me</h1><br>
+        </div>
+        <div class="about-content">
+            <p>A very passionate B.E Computer Science graduate looking for a satisfying work in a well-known organization</p>
+        </div>
+        <div class="about-content1">
+            <p>which allows me to grow my talents, extend my knowledge, and strengthen my learnings</p>
+        </div>
+        <div class="about-content2">
+            <p>I'm more interested in creating stunning designs and useful websites.</p>
+        </div>
+    </div>
+    <div class="portfolio" id="portfolio">
+        <div class="first">
+            <h1>Why Choose Me</h1>
+        </div>
+        <br><br>
+        <br><br>
+        <div class="skill-bars">
+            <div class="skill-bar">
+                <div class="info">
+                    <p>Html</p>
+                    <p class="percent">70%</p>
+                </div>
+                <div class="bar">
+                    <span class="html"></span>
+                </div>
+            </div>
+            <div class="skill-bar">
+                <div class="info">
+                    <p>Css</p>
+                    <p class="percent">50%</p>
+                </div>
+                <div class="bar">
+                    <span class="css"></span>
+                </div>
+            </div>
+            <div class="skill-bar">
+                <div class="info">
+                    <p>Git and GitHub</p>
+                    <p class="percent">60%</p>
+                </div>
+                <div class="bar">
+                    <span class="git"></span>
+                </div>
+            </div>
+            <div class="skill-bar">
+                <div class="info">
+                    <p>UI UX</p>
+                    <p class="percent">60%</p>
+                </div>
+                <div class="bar">
+                    <span class="uiux"></span>
+                </div>
+            </div>
+            <div class="skill-bar">
+                <div class="info">
+                    <p>Graphic Design</p>
+                    <p class="percent">90%</p>
+                </div>
+                <div class="bar">
+                    <span class="graphic"></span>
+                </div>
+            </div>
+            <div class="skill-bar">
+                <div class="info">
+                    <p>React</p>
+                    <p class="percent">20%</p>
+                </div>
+                <div class="bar">
+                    <span class="react"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contact">
+        <div class="form">
+            <form action="#">
+                <h2>Get In Touch</h2><br>
+                <div class="input">
+                    <input type="text" placeholder="Your Name" id="ruser" class="ruser"/><br><br>
+                    <input type="email" placeholder="Your Email" id="rpass" class="rpass"/><br><br>
+                    <input type="tel" placeholder="Your Phone" id="rpass" class="rpass"/><br><br>
+                    <input type="text" placeholder="Write a Message" id="rpass" class="rpass"/><br><br>
+                </div>
+                <div class="button">
+                    <br><button type="button" class="login-button" id="login">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            if (section) {
+                section.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+        }
+    </script>
+</body>
+</html>
